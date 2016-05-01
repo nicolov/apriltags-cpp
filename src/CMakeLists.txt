@@ -11,7 +11,7 @@ add_library(apriltags
   UnionFindSimple.cpp
 )
 
-set(AT_LIBS apriltags ${OPENCV_LDFLAGS})
+set(AT_LIBS apriltags ${OpenCV_LIBS})
 
 target_link_libraries(apriltags ${AT_LIBS})
 
