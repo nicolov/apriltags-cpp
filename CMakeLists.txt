@@ -21,7 +21,7 @@ find_library(GLUT_LIBRARY glut)
 
 include(FindPkgConfig)
 
-pkg_search_module(OPENCV REQUIRED)
+pkg_search_module(OPENCV)
 include_directories(${OPENCV_INCLUDE_DIRS})
 
 pkg_check_modules(CAIRO cairo)
